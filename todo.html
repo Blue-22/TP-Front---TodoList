@@ -1,30 +1,27 @@
 <html>
-  <head>
+<head>
     <title>Ma Todolist</title>
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <p>
-        <label for="new-task">Ajouter une tâche</label><input id="new-task" type="text">
-        <button>Ajouter</button>
-      </p>
+        <p>
+            <label for="new-task">Ajouter une tâche</label>
+            <input id="inputNewTask" type="text">
+            <button onClick="newTask()">Ajouter</button>
+        </p>
 
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks">
-        <li><input type="checkbox"><label>Editer une tâche</label><input type="text">
-            <button class="edit">Editer</button>
-            <button class="delete">Supprimer</button></li>
-        <li class="editMode"><input type="checkbox"><label>Go Shopping</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
-      </ul>
-
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
-      </ul>
+        <div id="tasks">
+            <!-- <div id="oneTask">
+                <p>Faire la cuisine</p>
+                <button class="edit">Editer</button>
+                <button class="delete">X</button>
+            </div> -->
+        </div>
     </div>
 
     <script type="text/javascript" src="todo.js"></script>
 
-  </body>
+</body>
+
 </html>
